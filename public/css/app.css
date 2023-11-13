@@ -1,0 +1,42 @@
+
+.row
+.col-12
+.card
+.form-container
+.btn-login
+{
+ 
+   padding: 5px 10px 5px;
+   width: 300px;
+
+
+}
+.col-12
+.card
+.form-container
+.login-email,
+.col-12
+.card
+.form-container
+.login-password
+{
+    width: 300px;
+    margin: auto;
+}
+.col-12 .card .card-body .error-message{
+    
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(245, 65, 65);
+    
+}
+
+.col-12 .card .card-body .error-message ul li {
+    font-weight: 300;
+    color: black;
+}
