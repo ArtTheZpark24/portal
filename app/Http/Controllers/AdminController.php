@@ -45,20 +45,14 @@ class AdminController extends Controller
 
             $request->session()->regenerate();
 
-            return redirect('/admin/dashboard');
+            return redirect('/admin/dashboard')
+            ->with('success', 'Login sucessful');
 
 
         }
         return redirect('/')
         ->withInput($request->only('l-email'))
-        ->withErrors(['loginError'=> 'Invalid email or password']);
-
-
-        
-
-    
-
-
+        ->withErrors(['loginError'=> 'These credentials do not match our records.']);
         return view('admin.login');
 
     }
@@ -72,5 +66,8 @@ class AdminController extends Controller
     public function dashboard(){
 
         return view('admin.dashboard');
+    }
+    public function forgotPassword(){
+        
     }
 }

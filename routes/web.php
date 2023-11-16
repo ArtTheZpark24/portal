@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ForgotPasswordController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/', [AdminController::class, 'login'])->name('login');
 Route::get('/', [AdminController::class, 'index'] );
+Route::get('/forgot-password', [ForgotPasswordController::class, 'forgotPass'])->name('forgot.password');
+Route::post('/forgot-password', [ForgotPasswordController::class, 'forgotPassPost'])
+->middleware('guest')->name('forgot.password.post');
+
+Route::get('/reset-password/{token}', [ForgotPasswordController::class, 'showResetForm'])->name('password.reset');
+
+
+Route::post('/reset-password', [ForgotPasswordController::class, 'resetPassword'])
+->middleware('guest')
+->name('password.update');
+
 
 
 

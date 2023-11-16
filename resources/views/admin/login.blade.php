@@ -11,7 +11,7 @@
          
 
                   @if ($errors->any())
-         <div class="error-message">
+         <div class="error-message alert alert-danger" role="alert">
                   @foreach ( $errors->all() as $error )
                   <ul>
                     <li>{{ $error }}</li>
@@ -33,7 +33,7 @@
                         </div>
                        
                         <p class="text-center forgot-text mt-5">
-                            <a href="#">Forgot password?</a>
+                            <a href="{{ route('forgot.password') }}">Forgot password?</a>
                         </p>
                     
                     </form>

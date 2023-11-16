@@ -32,11 +32,18 @@
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(245, 65, 65);
     
+    
+}
+.col-12 .card .card-body .error-message ul li{
+    list-style: none;
+}
+.login-message{
+    width: 500px;
 }
 
 .col-12 .card .card-body .error-message ul li {
     font-weight: 300;
     color: black;
 }
+
