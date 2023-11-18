@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+::after,
+::before{
+    box-sizing: border-box;
+}
+/* Log in style */
+body{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 0.875rem;
+    overflow-y: scroll;
+    margin: 0;
 
+}
 .row
 .col-12
 .card
@@ -27,17 +39,11 @@
     
     margin: auto;
     width: 300px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    
     
     
 }
-.col-12 .card .card-body .error-message ul li{
-    list-style: none;
-}
+
 .login-message{
     width: 500px;
 }
@@ -45,5 +51,109 @@
 .col-12 .card .card-body .error-message ul li {
     font-weight: 300;
     color: black;
+    list-style: none;
+    text-align: center;
 }
 
+/* Log in style */
+
+/* Style admin dashboard */
+.sidebar-logo  h6, p{
+  margin: auto;
+   color: #fff;
+
+}
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+#sidebar{
+    max-width: 264px;
+    min-width: 264px;
+    background: var(--bs-dark);
+    padding: 10px;
+    transition: all 0.35s ease-in-out;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Style admin dashboard */
+
+/* Sidebar style */
+#sidebar-toggle{
+    cursor: pointer;
+}
+
+.sidebar-logo{
+    display: flex;
+
+    padding: 1.15rem;
+}
+.sidebar-nav{
+    flex-grow: 1;
+    list-style: none;
+    color: #fff;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+.sidebar-header{
+    font-size: .75rem;
+    padding: .625rem 1.625rem;
+}
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color: #fff;
+    position: relative;
+    display: block;
+    font-size: 0.875rem;
+}
+.sidebar-nav li a{
+    text-decoration: none;
+}
+#sidebar.collapsed{
+    margin-left: -264px;
+}
+.sidebar-logo a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.content .container-fluid .row .col-md-4 .card .more-details {
+   cursor: pointer;
+}
+.content .container-fluid .row .col-md-4 .card .more-details:hover {
+    opacity: 0.8;
+ }
+ 
+
+@media (max-width: 700px) {
+    .content .container-fluid .row .col-md-4 .card{
+        margin: 24px;
+        overflow: hidden;
+        font-size: 14px;
+       width: 250px;
+    }
+    
+  }

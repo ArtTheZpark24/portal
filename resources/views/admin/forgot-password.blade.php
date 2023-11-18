@@ -47,7 +47,7 @@
                  
 
                       <div class="border p-3 fw-light">
-                        <p>We will send a link to your email, please use the link to reset your password</p>
+                        <p>We will send a link to your email mailtrap, please use the link to reset your password</p>
                     </div>
     
                      

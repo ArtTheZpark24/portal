@@ -65,7 +65,12 @@ class AdminController extends Controller
 
     public function dashboard(){
 
-        return view('admin.dashboard');
+        $user = auth()->user();
+
+        $firstname = $user->name;
+        $email =$user->email;
+
+        return view('admin.dashboard', ['firstname'=> $firstname, 'email'=>$email]);
     }
     public function forgotPassword(){
         
